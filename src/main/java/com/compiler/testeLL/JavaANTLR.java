@@ -1,5 +1,6 @@
-package com.compiler.javaantlr;
+package com.compiler.testeLL;
 
+import com.compiler.javaantlr.*;
 import java.io.IOException;
 import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.tree.*;
@@ -16,16 +17,16 @@ public class JavaANTLR {
         // Cria um CharStream a partir da entrada
         //CharStream input = CharStreams.fromStream(System.in);
         
-        CharStream input = CharStreams.fromString("2*(2+2)");
+        CharStream input = CharStreams.fromString("main(){ int x, y; scanf(x); y = 3 * x; println(y); }");
         
         // Cria um lexer a partir do CharStream
-        gramaticaLRLexer lexer = new gramaticaLRLexer(input);
+        gramaticaLLLexer lexer = new gramaticaLLLexer(input);
         
         // Cria um CommonTokenStream a partir do lexer
         CommonTokenStream tokens = new CommonTokenStream(lexer);
         
         // Cria um parser a partir do CommonTokenStream
-        gramaticaLRParser parser = new gramaticaLRParser(tokens);
+        gramaticaLLParser parser = new gramaticaLLParser(tokens);
         
         // Cria a árvore de análise sintática a partir do parser
         ParseTree tree = parser.programa();

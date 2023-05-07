@@ -48,7 +48,7 @@ escrita: 'println' '(' listaTermoEscrita ')' ';';
 
 listaTermoEscrita: termoEscrita (',' termoEscrita)*;
 
-termoEscrita: ID dimensao2? | CONSTANTE | TEXTO;
+termoEscrita: ID dimensao2? | constante | TEXTO;
 
 selecao: 'if' '(' expressao ')' bloco senao?;
 
