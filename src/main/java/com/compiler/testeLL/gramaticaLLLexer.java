@@ -1,4 +1,5 @@
-// Generated from gramaticaLL.g4 by ANTLR 4.12.0
+// Generated from C:/Users/mauricio.rodrigues/OneDrive - NDD.Tech/Documentos/GitHub/JavaANTLR/src/main/java/com/compiler/testeLL\gramaticaLL.g4 by ANTLR 4.12.0
+package com.compiler.testeLL;
 
 package com.compiler.testeLL;
 

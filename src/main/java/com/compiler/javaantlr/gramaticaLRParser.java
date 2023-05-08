@@ -1,6 +1,7 @@
+// Generated from C:/Users/mauricio.rodrigues/OneDrive - NDD.Tech/Documentos/GitHub/JavaANTLR/src/main/java/com/compiler/javaantlr\gramaticaLR.g4 by ANTLR 4.12.0
+
 package com.compiler.javaantlr;
 
-// Generated from gramaticaLR.g4 by ANTLR 4.12.0
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -23,7 +24,7 @@ public class gramaticaLRParser extends Parser {
 		T__17=18, T__18=19, T__19=20, T__20=21, T__21=22, T__22=23, T__23=24, 
 		T__24=25, T__25=26, T__26=27, T__27=28, T__28=29, T__29=30, T__30=31, 
 		T__31=32, T__32=33, T__33=34, T__34=35, T__35=36, ID=37, NUM_INT=38, NUM_DEC=39, 
-		TEXTO=40, WS=41, CONSTANTE=42;
+		TEXTO=40, WS=41;
 	public static final int
 		RULE_programa = 0, RULE_secaoFuncoes = 1, RULE_listaFuncoes = 2, RULE_decFuncao = 3, 
 		RULE_tipoRetorno = 4, RULE_tipo = 5, RULE_tipoBase = 6, RULE_dimensao = 7, 
@@ -68,7 +69,7 @@ public class gramaticaLRParser extends Parser {
 			null, null, null, null, null, null, null, null, null, null, null, null, 
 			null, null, null, null, null, null, null, null, null, null, null, null, 
 			null, null, null, null, null, null, null, null, null, null, null, null, 
-			null, "ID", "NUM_INT", "NUM_DEC", "TEXTO", "WS", "CONSTANTE"
+			null, "ID", "NUM_INT", "NUM_DEC", "TEXTO", "WS"
 		};
 	}
 	private static final String[] _SYMBOLIC_NAMES = makeSymbolicNames();
@@ -142,6 +143,11 @@ public class gramaticaLRParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gramaticaLRListener ) ((gramaticaLRListener)listener).exitPrograma(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gramaticaLRVisitor ) return ((gramaticaLRVisitor<? extends T>)visitor).visitPrograma(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final ProgramaContext programa() throws RecognitionException {
@@ -183,6 +189,11 @@ public class gramaticaLRParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gramaticaLRListener ) ((gramaticaLRListener)listener).exitSecaoFuncoes(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gramaticaLRVisitor ) return ((gramaticaLRVisitor<? extends T>)visitor).visitSecaoFuncoes(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -243,6 +254,11 @@ public class gramaticaLRParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gramaticaLRListener ) ((gramaticaLRListener)listener).exitListaFuncoes(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gramaticaLRVisitor ) return ((gramaticaLRVisitor<? extends T>)visitor).visitListaFuncoes(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -325,6 +341,11 @@ public class gramaticaLRParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gramaticaLRListener ) ((gramaticaLRListener)listener).exitDecFuncao(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gramaticaLRVisitor ) return ((gramaticaLRVisitor<? extends T>)visitor).visitDecFuncao(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final DecFuncaoContext decFuncao() throws RecognitionException {
@@ -374,6 +395,11 @@ public class gramaticaLRParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gramaticaLRListener ) ((gramaticaLRListener)listener).exitTipoRetorno(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gramaticaLRVisitor ) return ((gramaticaLRVisitor<? extends T>)visitor).visitTipoRetorno(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -436,6 +462,11 @@ public class gramaticaLRParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gramaticaLRListener ) ((gramaticaLRListener)listener).exitTipo(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gramaticaLRVisitor ) return ((gramaticaLRVisitor<? extends T>)visitor).visitTipo(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final TipoContext tipo() throws RecognitionException {
@@ -484,6 +515,11 @@ public class gramaticaLRParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gramaticaLRListener ) ((gramaticaLRListener)listener).exitTipoBase(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gramaticaLRVisitor ) return ((gramaticaLRVisitor<? extends T>)visitor).visitTipoBase(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final TipoBaseContext tipoBase() throws RecognitionException {
@@ -530,6 +566,11 @@ public class gramaticaLRParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gramaticaLRListener ) ((gramaticaLRListener)listener).exitDimensao(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gramaticaLRVisitor ) return ((gramaticaLRVisitor<? extends T>)visitor).visitDimensao(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -587,6 +628,11 @@ public class gramaticaLRParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gramaticaLRListener ) ((gramaticaLRListener)listener).exitParametros(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gramaticaLRVisitor ) return ((gramaticaLRVisitor<? extends T>)visitor).visitParametros(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -651,6 +697,11 @@ public class gramaticaLRParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gramaticaLRListener ) ((gramaticaLRListener)listener).exitListaParametros(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gramaticaLRVisitor ) return ((gramaticaLRVisitor<? extends T>)visitor).visitListaParametros(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final ListaParametrosContext listaParametros() throws RecognitionException {
@@ -712,6 +763,11 @@ public class gramaticaLRParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gramaticaLRListener ) ((gramaticaLRListener)listener).exitPrincipal(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gramaticaLRVisitor ) return ((gramaticaLRVisitor<? extends T>)visitor).visitPrincipal(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final PrincipalContext principal() throws RecognitionException {
@@ -761,6 +817,11 @@ public class gramaticaLRParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gramaticaLRListener ) ((gramaticaLRListener)listener).exitBloco(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gramaticaLRVisitor ) return ((gramaticaLRVisitor<? extends T>)visitor).visitBloco(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final BlocoContext bloco() throws RecognitionException {
@@ -806,6 +867,11 @@ public class gramaticaLRParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gramaticaLRListener ) ((gramaticaLRListener)listener).exitSecaoVariaveis(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gramaticaLRVisitor ) return ((gramaticaLRVisitor<? extends T>)visitor).visitSecaoVariaveis(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -875,6 +941,11 @@ public class gramaticaLRParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gramaticaLRListener ) ((gramaticaLRListener)listener).exitListaVariaveis(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gramaticaLRVisitor ) return ((gramaticaLRVisitor<? extends T>)visitor).visitListaVariaveis(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -959,6 +1030,11 @@ public class gramaticaLRParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gramaticaLRListener ) ((gramaticaLRListener)listener).exitListaID(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gramaticaLRVisitor ) return ((gramaticaLRVisitor<? extends T>)visitor).visitListaID(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final ListaIDContext listaID() throws RecognitionException {
@@ -1015,6 +1091,11 @@ public class gramaticaLRParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gramaticaLRListener ) ((gramaticaLRListener)listener).exitSecaoComandos(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gramaticaLRVisitor ) return ((gramaticaLRVisitor<? extends T>)visitor).visitSecaoComandos(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -1077,6 +1158,11 @@ public class gramaticaLRParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gramaticaLRListener ) ((gramaticaLRListener)listener).exitListaComandos(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gramaticaLRVisitor ) return ((gramaticaLRVisitor<? extends T>)visitor).visitListaComandos(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -1170,6 +1256,11 @@ public class gramaticaLRParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gramaticaLRListener ) ((gramaticaLRListener)listener).exitComando(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gramaticaLRVisitor ) return ((gramaticaLRVisitor<? extends T>)visitor).visitComando(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final ComandoContext comando() throws RecognitionException {
@@ -1260,6 +1351,11 @@ public class gramaticaLRParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gramaticaLRListener ) ((gramaticaLRListener)listener).exitLeitura(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gramaticaLRVisitor ) return ((gramaticaLRVisitor<? extends T>)visitor).visitLeitura(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final LeituraContext leitura() throws RecognitionException {
@@ -1310,6 +1406,11 @@ public class gramaticaLRParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gramaticaLRListener ) ((gramaticaLRListener)listener).exitListaTermoLeitura(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gramaticaLRVisitor ) return ((gramaticaLRVisitor<? extends T>)visitor).visitListaTermoLeitura(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -1369,6 +1470,11 @@ public class gramaticaLRParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gramaticaLRListener ) ((gramaticaLRListener)listener).exitTermoLeitura(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gramaticaLRVisitor ) return ((gramaticaLRVisitor<? extends T>)visitor).visitTermoLeitura(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final TermoLeituraContext termoLeitura() throws RecognitionException {
@@ -1418,6 +1524,11 @@ public class gramaticaLRParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gramaticaLRListener ) ((gramaticaLRListener)listener).exitDimensao2(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gramaticaLRVisitor ) return ((gramaticaLRVisitor<? extends T>)visitor).visitDimensao2(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -1507,6 +1618,11 @@ public class gramaticaLRParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gramaticaLRListener ) ((gramaticaLRListener)listener).exitEscrita(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gramaticaLRVisitor ) return ((gramaticaLRVisitor<? extends T>)visitor).visitEscrita(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final EscritaContext escrita() throws RecognitionException {
@@ -1558,6 +1674,11 @@ public class gramaticaLRParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gramaticaLRListener ) ((gramaticaLRListener)listener).exitListaTermoEscrita(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gramaticaLRVisitor ) return ((gramaticaLRVisitor<? extends T>)visitor).visitListaTermoEscrita(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final ListaTermoEscritaContext listaTermoEscrita() throws RecognitionException {
@@ -1604,7 +1725,9 @@ public class gramaticaLRParser extends Parser {
 		public Dimensao2Context dimensao2() {
 			return getRuleContext(Dimensao2Context.class,0);
 		}
-		public TerminalNode CONSTANTE() { return getToken(gramaticaLRParser.CONSTANTE, 0); }
+		public ConstanteContext constante() {
+			return getRuleContext(ConstanteContext.class,0);
+		}
 		public TerminalNode TEXTO() { return getToken(gramaticaLRParser.TEXTO, 0); }
 		public TermoEscritaContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -1617,6 +1740,11 @@ public class gramaticaLRParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gramaticaLRListener ) ((gramaticaLRListener)listener).exitTermoEscrita(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gramaticaLRVisitor ) return ((gramaticaLRVisitor<? extends T>)visitor).visitTermoEscrita(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -1644,11 +1772,12 @@ public class gramaticaLRParser extends Parser {
 				}
 				}
 				break;
-			case CONSTANTE:
+			case NUM_INT:
+			case NUM_DEC:
 				enterOuterAlt(_localctx, 2);
 				{
 				setState(256);
-				match(CONSTANTE);
+				constante();
 				}
 				break;
 			case TEXTO:
@@ -1695,6 +1824,11 @@ public class gramaticaLRParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gramaticaLRListener ) ((gramaticaLRListener)listener).exitSelecao(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gramaticaLRVisitor ) return ((gramaticaLRVisitor<? extends T>)visitor).visitSelecao(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -1754,6 +1888,11 @@ public class gramaticaLRParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gramaticaLRListener ) ((gramaticaLRListener)listener).exitSenao(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gramaticaLRVisitor ) return ((gramaticaLRVisitor<? extends T>)visitor).visitSenao(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final SenaoContext senao() throws RecognitionException {
@@ -1810,6 +1949,11 @@ public class gramaticaLRParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gramaticaLRListener ) ((gramaticaLRListener)listener).exitEnquanto(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gramaticaLRVisitor ) return ((gramaticaLRVisitor<? extends T>)visitor).visitEnquanto(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final EnquantoContext enquanto() throws RecognitionException {
@@ -1859,6 +2003,11 @@ public class gramaticaLRParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gramaticaLRListener ) ((gramaticaLRListener)listener).exitAtribuicao(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gramaticaLRVisitor ) return ((gramaticaLRVisitor<? extends T>)visitor).visitAtribuicao(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final AtribuicaoContext atribuicao() throws RecognitionException {
@@ -1907,6 +2056,11 @@ public class gramaticaLRParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gramaticaLRListener ) ((gramaticaLRListener)listener).exitComplemento(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gramaticaLRVisitor ) return ((gramaticaLRVisitor<? extends T>)visitor).visitComplemento(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -1971,6 +2125,11 @@ public class gramaticaLRParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gramaticaLRListener ) ((gramaticaLRListener)listener).exitFuncao(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gramaticaLRVisitor ) return ((gramaticaLRVisitor<? extends T>)visitor).visitFuncao(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final FuncaoContext funcao() throws RecognitionException {
@@ -2018,6 +2177,11 @@ public class gramaticaLRParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gramaticaLRListener ) ((gramaticaLRListener)listener).exitArgumentos(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gramaticaLRVisitor ) return ((gramaticaLRVisitor<? extends T>)visitor).visitArgumentos(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -2082,6 +2246,11 @@ public class gramaticaLRParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gramaticaLRListener ) ((gramaticaLRListener)listener).exitListaArgumentos(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gramaticaLRVisitor ) return ((gramaticaLRVisitor<? extends T>)visitor).visitListaArgumentos(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final ListaArgumentosContext listaArgumentos() throws RecognitionException {
@@ -2139,6 +2308,11 @@ public class gramaticaLRParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gramaticaLRListener ) ((gramaticaLRListener)listener).exitRetorno(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gramaticaLRVisitor ) return ((gramaticaLRVisitor<? extends T>)visitor).visitRetorno(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final RetornoContext retorno() throws RecognitionException {
@@ -2183,6 +2357,11 @@ public class gramaticaLRParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gramaticaLRListener ) ((gramaticaLRListener)listener).exitExpressao(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gramaticaLRVisitor ) return ((gramaticaLRVisitor<? extends T>)visitor).visitExpressao(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final ExpressaoContext expressao() throws RecognitionException {
@@ -2225,6 +2404,11 @@ public class gramaticaLRParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gramaticaLRListener ) ((gramaticaLRListener)listener).exitExprOu(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gramaticaLRVisitor ) return ((gramaticaLRVisitor<? extends T>)visitor).visitExprOu(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -2285,6 +2469,11 @@ public class gramaticaLRParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gramaticaLRListener ) ((gramaticaLRListener)listener).exitExprE(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gramaticaLRVisitor ) return ((gramaticaLRVisitor<? extends T>)visitor).visitExprE(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -2349,6 +2538,11 @@ public class gramaticaLRParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gramaticaLRListener ) ((gramaticaLRListener)listener).exitExprRelacional(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gramaticaLRVisitor ) return ((gramaticaLRVisitor<? extends T>)visitor).visitExprRelacional(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final ExprRelacionalContext exprRelacional() throws RecognitionException {
@@ -2411,6 +2605,11 @@ public class gramaticaLRParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gramaticaLRListener ) ((gramaticaLRListener)listener).exitExprAditiva(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gramaticaLRVisitor ) return ((gramaticaLRVisitor<? extends T>)visitor).visitExprAditiva(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final ExprAditivaContext exprAditiva() throws RecognitionException {
@@ -2466,6 +2665,11 @@ public class gramaticaLRParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gramaticaLRListener ) ((gramaticaLRListener)listener).exitOpAditivo(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gramaticaLRVisitor ) return ((gramaticaLRVisitor<? extends T>)visitor).visitOpAditivo(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -2525,6 +2729,11 @@ public class gramaticaLRParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gramaticaLRListener ) ((gramaticaLRListener)listener).exitExprMultiplicativa(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gramaticaLRVisitor ) return ((gramaticaLRVisitor<? extends T>)visitor).visitExprMultiplicativa(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final ExprMultiplicativaContext exprMultiplicativa() throws RecognitionException {
@@ -2580,6 +2789,11 @@ public class gramaticaLRParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gramaticaLRListener ) ((gramaticaLRListener)listener).exitOpMultiplicativo(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gramaticaLRVisitor ) return ((gramaticaLRVisitor<? extends T>)visitor).visitOpMultiplicativo(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -2643,6 +2857,11 @@ public class gramaticaLRParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gramaticaLRListener ) ((gramaticaLRListener)listener).exitFator(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gramaticaLRVisitor ) return ((gramaticaLRVisitor<? extends T>)visitor).visitFator(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -2733,6 +2952,11 @@ public class gramaticaLRParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gramaticaLRListener ) ((gramaticaLRListener)listener).exitConstante(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gramaticaLRVisitor ) return ((gramaticaLRVisitor<? extends T>)visitor).visitConstante(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final ConstanteContext constante() throws RecognitionException {
@@ -2778,6 +3002,11 @@ public class gramaticaLRParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gramaticaLRListener ) ((gramaticaLRListener)listener).exitSinal(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gramaticaLRVisitor ) return ((gramaticaLRVisitor<? extends T>)visitor).visitSinal(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -2837,6 +3066,11 @@ public class gramaticaLRParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gramaticaLRListener ) ((gramaticaLRListener)listener).exitOpRelacional(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gramaticaLRVisitor ) return ((gramaticaLRVisitor<? extends T>)visitor).visitOpRelacional(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -2904,7 +3138,7 @@ public class gramaticaLRParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\u0004\u0001*\u017e\u0002\u0000\u0007\u0000\u0002\u0001\u0007\u0001\u0002"+
+		"\u0004\u0001)\u017e\u0002\u0000\u0007\u0000\u0002\u0001\u0007\u0001\u0002"+
 		"\u0002\u0007\u0002\u0002\u0003\u0007\u0003\u0002\u0004\u0007\u0004\u0002"+
 		"\u0005\u0007\u0005\u0002\u0006\u0007\u0006\u0002\u0007\u0007\u0007\u0002"+
 		"\b\u0007\b\u0002\t\u0007\t\u0002\n\u0007\n\u0002\u000b\u0007\u000b\u0002"+
@@ -3066,7 +3300,7 @@ public class gramaticaLRParser extends Parser {
 		"/\u0001\u0000\u0000\u0000\u00fb\u00f9\u0001\u0000\u0000\u0000\u00fc\u00fe"+
 		"\u0005%\u0000\u0000\u00fd\u00ff\u0003*\u0015\u0000\u00fe\u00fd\u0001\u0000"+
 		"\u0000\u0000\u00fe\u00ff\u0001\u0000\u0000\u0000\u00ff\u0103\u0001\u0000"+
-		"\u0000\u0000\u0100\u0103\u0005*\u0000\u0000\u0101\u0103\u0005(\u0000\u0000"+
+		"\u0000\u0000\u0100\u0103\u0003V+\u0000\u0101\u0103\u0005(\u0000\u0000"+
 		"\u0102\u00fc\u0001\u0000\u0000\u0000\u0102\u0100\u0001\u0000\u0000\u0000"+
 		"\u0102\u0101\u0001\u0000\u0000\u0000\u01031\u0001\u0000\u0000\u0000\u0104"+
 		"\u0105\u0005\u0011\u0000\u0000\u0105\u0106\u0005\u0001\u0000\u0000\u0106"+

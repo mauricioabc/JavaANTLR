@@ -1,5 +1,9 @@
 grammar gramaticaLR;
 
+@header {
+package com.compiler.javaantlr;
+}
+
 programa: secaoFuncoes principal;
 
 secaoFuncoes: listaFuncoes | ;

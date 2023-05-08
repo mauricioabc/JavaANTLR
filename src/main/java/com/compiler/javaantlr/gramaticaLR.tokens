@@ -39,7 +39,6 @@ NUM_INT=38
 NUM_DEC=39
 TEXTO=40
 WS=41
-CONSTANTE=42
 '('=1
 ')'=2
 'void'=3

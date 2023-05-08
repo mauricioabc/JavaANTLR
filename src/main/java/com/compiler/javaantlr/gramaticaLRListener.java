@@ -1,6 +1,7 @@
+// Generated from C:/Users/mauricio.rodrigues/OneDrive - NDD.Tech/Documentos/GitHub/JavaANTLR/src/main/java/com/compiler/javaantlr\gramaticaLR.g4 by ANTLR 4.12.0
+
 package com.compiler.javaantlr;
 
-// Generated from gramaticaLR.g4 by ANTLR 4.12.0
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**
